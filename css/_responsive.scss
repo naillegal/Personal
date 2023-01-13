@@ -1,0 +1,17 @@
+@media (max-width:576){
+#header{
+    .container{
+        .navmenu{
+        ul{
+            li{
+                visibility: hidden;
+            }
+            .hidden{
+                visibility: visible;
+            }
+        }
+
+        }
+    }
+    }
+}
