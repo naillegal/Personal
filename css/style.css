@@ -1,24 +1,126 @@
 #header .container {
   padding: 20px 0px;
 }
+#header .container .navmenu ul .last {
+  color: #8c99ff;
+}
+
+#us {
+  background-color: #73A7FE;
+  text-align: center;
+  width: 100%;
+  padding: 100px 0px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#map iframe {
+  padding: 100px 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+#form {
+  background-color: #F9F9FF;
+}
+#form i {
+  font-size: 30px;
+  color: #73A7FE;
+  padding: 50px 0px;
+}
+#form h6 {
+  padding-top: 15px;
+}
+#form p {
+  color: #7f8191;
+}
+#form input {
+  height: 8vh;
+  width: 60%;
+  margin: 50px 0 0 150px;
+  border: 1px solid rgba(128, 128, 128, 0.397);
+  outline: none;
+}
+#form textarea {
+  margin-top: 50px;
+  outline: none;
+}
+#form button {
+  background-color: #8490FF;
+  border: none;
+  width: 60%;
+}
+#form button p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-top: 15px;
+}
+#form button:hover {
+  background-color: white;
+  border: 1px solid #73A7FE;
+}
+#form button:hover p {
+  color: #73A7FE;
+}
+
+#header .container {
+  padding: 20px 0px;
+}
+#header .container .navmenu ul .first {
+  color: #8c99ff;
+}
+#header .container .navmenu ul .blog {
+  position: relative;
+}
+#header .container .navmenu ul .blog:hover .blog-dropped {
+  visibility: visible;
+}
+#header .container .navmenu ul .blog .blog-dropped {
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  width: 200px;
+  visibility: hidden;
+  color: black;
+  height: 10vh;
+}
+#header .container .navmenu ul .pages {
+  position: relative;
+}
+#header .container .navmenu ul .pages:hover .pages-dropped {
+  visibility: visible;
+}
+#header .container .navmenu ul .pages .pages-dropped {
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  width: 200px;
+  visibility: hidden;
+  color: black;
+  height: 10vh;
+}
 #header .container .navmenu ul .hidden {
   visibility: hidden;
 }
 #header .container .navmenu ul li {
   list-style: none;
+}
+#header .container .navmenu ul li i {
+  margin-left: 5px;
+}
+#header .container .navmenu ul li a {
+  text-decoration: none;
   padding: 0px 10px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   padding: 10px 15px;
   font-weight: bold;
-  transition: 0.3s ease-in-out;
   font-style: normal;
   cursor: pointer;
+  color: black;
 }
-#header .container .navmenu ul li:first-child {
-  color: #8c99ff;
-}
-#header .container .navmenu ul li:hover {
+#header .container .navmenu ul li a:hover {
   color: #8c99ff;
 }
 
@@ -127,7 +229,7 @@
 }
 #offer .numbers {
   padding: 120px 0px;
-  background-color: #73A6FD;
+  background-color: #73a6fd;
   text-align: center;
   color: white;
   font-size: 40px;
@@ -166,6 +268,22 @@
   color: #64b9fc;
 }
 
+#pictures .boxes1 div {
+  position: relative;
+}
+#pictures .boxes1 div:hover .overlay {
+  opacity: 1;
+}
+#pictures .boxes1 div .overlay {
+  position: absolute;
+  width: 100%;
+  height: 91.5%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  background-color: rgba(127, 159, 239, 0.662745098);
+}
 #pictures .boxes1 h4 {
   text-align: center;
   font-size: 20px;
@@ -173,16 +291,364 @@
 #pictures .boxes2 {
   margin-top: 30px;
 }
+#pictures .boxes2 div {
+  position: relative;
+}
+#pictures .boxes2 div:hover .overlay {
+  opacity: 1;
+}
+#pictures .boxes2 div .overlay {
+  position: absolute;
+  width: 100%;
+  height: 91.5%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  background-color: rgba(127, 159, 239, 0.662745098);
+}
 #pictures .boxes2 h4 {
   text-align: center;
   font-size: 20px;
 }
 
-@media (max-width: 576) {
+#client {
+  padding: 100px 0;
+  background-color: #f9f9ff;
+}
+#client .text {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#client .text p {
+  color: #7f8191;
+}
+#client .boxes {
+  padding-top: 50px;
+}
+#client .boxes p {
+  color: #7f8191;
+}
+#client .boxes img {
+  width: 30px;
+}
+#client .boxes div {
+  background-color: white;
+  padding: 20px;
+}
+
+#plan {
+  padding-bottom: 100px;
+}
+#plan .text {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 30px;
+}
+#plan .text p {
+  color: #7f8191;
+}
+#plan .box1 {
+  background-color: #f9f9ff;
+  padding: 20px 50px;
+  text-align: center;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  z-index: -1;
+}
+#plan .box1 .circle {
+  background: #e2e5ff;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  margin: auto;
+}
+#plan .box1 .circle h4 {
+  padding-top: 30px;
+  font-size: 30px;
+}
+#plan .box1:hover {
+  background-color: #73a6fd;
+  transform: scale(1.1);
+}
+#plan .box1:hover button {
+  visibility: visible;
+}
+#plan .box1:hover h1 {
+  visibility: hidden;
+}
+#plan .box1:hover h4 {
+  color: white;
+}
+#plan .box1:hover p {
+  color: white;
+}
+#plan .box1 button {
+  width: 80%;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40px;
+  border: none;
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  font-weight: bold;
+  visibility: hidden;
+}
+#plan .box1 p {
+  color: #7f8191;
+}
+#plan .box1 {
+  background-color: #f9f9ff;
+  padding: 20px 50px;
+  text-align: center;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  z-index: 4;
+}
+#plan .box1 .circle {
+  background: #e2e5ff;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  margin: auto;
+}
+#plan .box1 .circle h4 {
+  padding-top: 30px;
+  font-size: 30px;
+}
+#plan .box1:hover {
+  background-color: #73a6fd;
+  transform: scale(1.1);
+}
+#plan .box1:hover button {
+  visibility: visible;
+}
+#plan .box1:hover h1 {
+  visibility: hidden;
+}
+#plan .box1:hover h4 {
+  color: white;
+}
+#plan .box1:hover p {
+  color: white;
+}
+#plan .box1 button {
+  width: 80%;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40px;
+  border: none;
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  font-weight: bold;
+  visibility: hidden;
+}
+#plan .box1 p {
+  color: #7f8191;
+}
+#plan .box2 {
+  background-color: #f9f9ff;
+  padding: 20px 50px;
+  text-align: center;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  z-index: 3;
+}
+#plan .box2 .circle {
+  background: #e2e5ff;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  margin: auto;
+}
+#plan .box2 .circle h4 {
+  padding-top: 30px;
+  font-size: 30px;
+}
+#plan .box2:hover {
+  background-color: #73a6fd;
+  transform: scale(1.1);
+}
+#plan .box2:hover button {
+  visibility: visible;
+}
+#plan .box2:hover h1 {
+  visibility: hidden;
+}
+#plan .box2:hover h4 {
+  color: white;
+}
+#plan .box2:hover p {
+  color: white;
+}
+#plan .box2 button {
+  width: 80%;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40px;
+  border: none;
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  font-weight: bold;
+  visibility: hidden;
+}
+#plan .box2 p {
+  color: #7f8191;
+}
+#plan .box3 {
+  background-color: #f9f9ff;
+  padding: 20px 50px;
+  text-align: center;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  z-index: 2;
+}
+#plan .box3 .circle {
+  background: #e2e5ff;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  margin: auto;
+}
+#plan .box3 .circle h4 {
+  padding-top: 30px;
+  font-size: 30px;
+}
+#plan .box3:hover {
+  background-color: #73a6fd;
+  transform: scale(1.1);
+}
+#plan .box3:hover button {
+  visibility: visible;
+}
+#plan .box3:hover h1 {
+  visibility: hidden;
+}
+#plan .box3:hover h4 {
+  color: white;
+}
+#plan .box3:hover p {
+  color: white;
+}
+#plan .box3 button {
+  width: 80%;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40px;
+  border: none;
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  font-weight: bold;
+  visibility: hidden;
+}
+#plan .box3 p {
+  color: #7f8191;
+}
+#plan .box4 {
+  background-color: #f9f9ff;
+  padding: 20px 50px;
+  text-align: center;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  z-index: 1;
+}
+#plan .box4 .circle {
+  background: #e2e5ff;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  margin: auto;
+}
+#plan .box4 .circle h4 {
+  padding-top: 30px;
+  font-size: 30px;
+}
+#plan .box4:hover {
+  background-color: #73a6fd;
+  transform: scale(1.1);
+}
+#plan .box4:hover button {
+  visibility: visible;
+}
+#plan .box4:hover h1 {
+  visibility: hidden;
+}
+#plan .box4:hover h4 {
+  color: white;
+}
+#plan .box4:hover p {
+  color: white;
+}
+#plan .box4 button {
+  width: 80%;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 40px;
+  border: none;
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  font-weight: bold;
+  visibility: hidden;
+}
+#plan .box4 p {
+  color: #7f8191;
+}
+
+#blog .text {
+  text-align: center;
+}
+#blog .text p {
+  color: #7f8191;
+}
+#blog .boxes p {
+  color: #7f8191;
+}
+#blog .boxes h6 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#footer {
+  background-color: #04091e;
+  width: 100;
+  padding: 100px 0px;
+}
+#footer a {
+  text-decoration: none;
+}
+#footer h4 {
+  color: white;
+}
+#footer p {
+  color: #7f8191;
+}
+#footer i {
+  color: white;
+  padding: 0px 10px;
+}
+#footer i:hover {
+  color: #73a6fd;
+}
+#footer input {
+  width: 150%;
+  outline: none;
+  height: 40px;
+}
+
+@media (max-width: 576px) {
   #header .container .navmenu ul li {
     visibility: hidden;
   }
   #header .container .navmenu ul .hidden {
     visibility: visible;
+    position: relative;
+    right: 60%;
+    vertical-align: middle;
   }
 }/*# sourceMappingURL=style.css.map */

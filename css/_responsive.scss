@@ -1,17 +1,19 @@
-@media (max-width:576){
-#header{
-    .container{
-        .navmenu{
-        ul{
-            li{
-                visibility: hidden;
-            }
-            .hidden{
-                visibility: visible;
-            }
+@media (max-width: 576px) {
+  #header {
+    .container {
+      .navmenu {
+        ul {
+          li {
+            visibility: hidden;
+          }
+          .hidden {
+            visibility: visible;
+            position: relative;
+            right: 60%;
+            vertical-align: middle;
+          }
         }
-
-        }
+      }
     }
-    }
+  }
 }
